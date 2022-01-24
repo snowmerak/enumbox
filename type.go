@@ -2,6 +2,7 @@ package main
 
 type EnumBox struct {
 	Version   string     `yaml:"version"`
+	Imports   []string   `yaml:"imports"`
 	Variables []Variable `yaml:"variables"`
 }
 

@@ -49,6 +49,12 @@ func main() {
 		}
 		defer f.Close()
 		fmt.Fprintln(f, "package "+filepath.Base(base)+"\n")
+		// imports
+		fmt.Fprintf(f, "import (\n")
+		for _, i := range box.Imports {
+			fmt.Fprintf(f, "\t\"%s\"\n", i)
+		}
+		fmt.Fprint(f, ")\n\n")
 		// Variables
 		fmt.Fprint(f, "var (\n")
 		for _, variable := range box.Variables {
