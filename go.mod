@@ -1,4 +1,4 @@
-module gihub.com/snowmerak/enumbox
+module github.com/snowmerak/enumbox
 
 go 1.16
 
