@@ -32,6 +32,7 @@ MUST USE SLASH, too.
 
 ```yaml
 version: 0.0.1
+imports: []
 variables:
 - name: jhon
   type: string
